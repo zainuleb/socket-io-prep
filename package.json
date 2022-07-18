@@ -1,0 +1,22 @@
+{
+  "name": "socket-io-prep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webSocket-Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zainuleb/socket-io-prep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zainuleb/socket-io-prep/issues"
+  },
+  "homepage": "https://github.com/zainuleb/socket-io-prep#readme",
+  "dependencies": {
+    "ws": "^8.8.1"
+  }
+}
