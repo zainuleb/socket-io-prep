@@ -9,8 +9,11 @@ const expressServer = app.listen(9000);
 const io = socketio(expressServer);
 
 io.on('connection', (socket) => {
-  socket.emit('messageFromServer', { data: 'Welcome to Socket.io Kuni' });
-  socket.on('messageToServer', (dataFromClient) => {
-    console.log(dataFromClient);
+  socket.emit('messageFromServer', { data: 'Welcome to the socket.io server' });
+  socket.on('messageToServer', (dataFromClient) => {});
+
+  socket.on('newMessageToServer', (newMsg) => {
+    console.log(newMsg);
+    io.emit('messageToClients', { text: newMsg.text });
   });
 });
